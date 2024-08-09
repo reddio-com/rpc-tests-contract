@@ -9,7 +9,7 @@
     "timestamp": "2023-11-24 00:00:00.000+00:00",
     "tokens": [
       {
-        "chainId": 5,
+        "chainId": 50342,
         "address": "0x310B8685e3E69Cb05b251A12f5FFAb23001CdA42",
         "name": "AAA Token",
         "symbol": "AAA",
@@ -17,7 +17,7 @@
         "logoURI": "https://www.wjblog.top/images/aaa.png"
       },
       {
-        "chainId": 5,
+        "chainId": 50342,
         "address": "0xeC054c6ee2DbbeBC9EbCA50CdBF94A94B02B2E40",
         "name": "BBB Token",
         "symbol": "BBB",
