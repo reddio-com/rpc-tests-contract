@@ -6,7 +6,13 @@
     "clean": "npx hardhat clean",
     "deploy:hh": "npx hardhat run --network hardhat scripts/deployErc20.js",
     "deploy:verseTestnet": "source .test-eth-mainnet.env && npx hardhat run --network verseTestnet scripts/deploy.js",
+    "test:stateForked": "source .test-eth-mainnet.env && TEST_BLOCK_NUMBER=7788 npx hardhat test test/UniswapV2Pair.spec.js --network verseTestnet && unset ADMIN_ADMIN_PRIVATE_KEY && unset RPC_PROVIDER unset USER_PRIVATE_KEY",
     "deploy:erc20": "source .test-eth-mainnet.env && npx hardhat run --network verseTestnet scripts/deployERC20.js",
+    "deploy:factory": "source .test-eth-mainnet.env && npx hardhat run --network verseTestnet scripts/deployFactory.js",
+    "deploy:weth9": "source .test-eth-mainnet.env && npx hardhat run --network verseTestnet scripts/deployWeth9.js",
+    "deploy:router": "source .test-eth-mainnet.env && npx hardhat run --network verseTestnet scripts/deployRouter.js",
+    "deploy:token": "source .test-eth-mainnet.env && npx hardhat run --network verseTestnet scripts/deployToken.js",
+    "deploy:m": "source .test-eth-mainnet.env && npx hardhat run --network verseTestnet scripts/deployM.js",
     "verse:erc20": "source .test-eth-mainnet.env && node scripts/erc20.js"
   },
   "devDependencies": {

@@ -4,7 +4,7 @@ pragma solidity ^0.8.21;
 
 import "./IERC20.sol";
 
-contract ERC20 is IERC20 {
+contract ERC20T is IERC20 {
     mapping(address => uint256) public override balanceOf;
 
     mapping(address => mapping(address => uint256)) public override allowance;
@@ -19,6 +19,10 @@ contract ERC20 is IERC20 {
     constructor(string memory name_, string memory symbol_) {
         name = name_;
         symbol = symbol_;
+    }
+
+    function blockNumberT() external view returns(uint256 blockNumber) {
+        blockNumber = block.number;
     }
 
     function transfer(address recipient, uint amount)
