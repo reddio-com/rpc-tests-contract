@@ -3,7 +3,7 @@ const {ethers} = require("hardhat");
 
 
 async function main() {
-  const ERC20 = await ethers.getContractFactory("ERC20");
+  const ERC20 = await ethers.getContractFactory("ERC20T");
   
   const erc20 = await ERC20.deploy("meme", "me");
   try {
